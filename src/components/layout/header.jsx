@@ -12,7 +12,7 @@ const Header = () => {
                     type="text" 
                     name="search" 
                     id="search"
-                    placeholder='Search'
+                    placeholder='Buscar'
                 />
                 <FaSearch className='search'/>
             </div>

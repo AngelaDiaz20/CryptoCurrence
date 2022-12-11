@@ -3,7 +3,7 @@ header{
     padding: 12px;
     width: 100%;
     display: grid;
-    grid-template-columns: 80px auto 120px;
+    grid-template-columns: 80px auto 60px;
     align-items: center;
     /* display: flex;
     justify-content: space-between;
@@ -22,11 +22,11 @@ header img:last-of-type{
 
 header .icon{
     color:  white;
+    display: none;
 }
 
 nav{
     /* background: rgb(181, 61, 10); */
-    width: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,13 +37,35 @@ nav{
     position: absolute;
     right: 10px;
     bottom: calc(100%/2 - 8px);
+    color: #787981;
 }
 
 .search-input{
     position: relative;
+    max-width: 400px;
 }
 
 .search-input input{
     width: 100%;
     padding: 5px;
+    background: #25273E;
+    border: .5px solid #1f234f;
+    border-radius: 4px;
+    color: white;
+    position: relative;
+}
+
+@media screen and (min-width:768px) {
+    header{
+        grid-template-columns: 80px auto 120px;
+    }
+    
+    header .icon{
+        display: block;
+    }
+
+    nav{
+
+        width: 100px;
+    }
 }
