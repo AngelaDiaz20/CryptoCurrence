@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #25273E;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.statistics-section{
+    background: url('../assets/img/bg-statistic.jpg');
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.301);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px 10px;
+    row-gap: 15px;
+}
+
+@media screen and (min-width:768px) {
+
+    h2{
+        font-size: 24px;
+    }
+
+    .layer{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 20px;
+    }
 }
