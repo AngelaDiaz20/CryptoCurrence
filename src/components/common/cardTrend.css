@@ -1,0 +1,20 @@
+.card-trend{
+    background: #a7aff431;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.trend{
+    padding: 30px 5%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .trend{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
