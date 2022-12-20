@@ -1,6 +1,6 @@
 header{
     background: #101225;
-    padding: 12px;
+    padding: 12px 5%;
     width: 100%;
     display: grid;
     grid-template-columns: 80px auto 60px;
@@ -61,7 +61,6 @@ nav{
     }
 
     nav{
-
         width: 100px;
     }
 }
